@@ -11,7 +11,7 @@ def about():
     return "This is a simple CI/CD Demo!"
 
 @app.route("/hello/<name>")
-def about():
+def name():
     return "Hello, {}!"
 
 
