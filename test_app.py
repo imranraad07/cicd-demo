@@ -14,3 +14,11 @@ def test_about():
 
     assert response.status_code == 200
     assert response.data in b"This is a simple CI/CD Demo!"    
+
+
+def test_name():
+    tester = app.test_client()
+    response = tester.get("/name/imran")
+
+    assert response.status_code == 200
+    assert response.data in b"Hello. imran!"        
