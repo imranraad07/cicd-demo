@@ -18,7 +18,7 @@ def test_about():
 
 def test_name():
     tester = app.test_client()
-    response = tester.get("/name/imran")
+    response = tester.get("/Alice")
 
     assert response.status_code == 200
-    assert response.data in b"Hello. imran!"        
+    assert response.data in b"Hello, Alice!"        

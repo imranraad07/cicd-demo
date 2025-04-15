@@ -10,9 +10,9 @@ def hello():
 def about():
     return "This is a simple CI/CD Demo!"
 
-@app.route("/hello/<name>")
-def name():
-    return "Hello, {}!"
+@app.route("/<name>")
+def greet(name):
+    return "Hello, {name}!"
 
 
 if __name__ == "__main__":
