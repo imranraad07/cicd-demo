@@ -12,7 +12,7 @@ def about():
 
 @app.route("/<name>")
 def greet(name):
-    return "Hello, {name}!"
+    return f"Hello, {name}!"
 
 
 if __name__ == "__main__":
