@@ -13,4 +13,4 @@ def test_about():
     response = tester.get("/about")
 
     assert response.status_code == 200
-    assert response.data in b"Hello from Flask!"    
+    assert response.data in b"This is a simple CI/CD Demo!"    
